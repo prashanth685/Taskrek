@@ -1,15 +1,18 @@
 import React from "react";
-import Card from "./Components/Card";
-import CreateTodo from "./Components/CreateTodo";
-import Simple from "./Components/Simple";
+import "./App.css";
+import TaskForm from "./Components/TaskForm";
+import TaskColumn from "./Components/TaskColumn";
 
 const App = () => {
   return (
-    <>
-      {/* <Card />
-      <CreateTodo /> */}
-      <Simple />
-    </>
+    <div className="app">
+      <TaskForm />
+      <main className="app_main">
+        <TaskColumn />
+        <section className="task_column">section 2</section>
+        <section className="task_column">section 3</section>
+      </main>
+    </div>
   );
 };
 
