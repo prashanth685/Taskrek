@@ -25,10 +25,15 @@
   background-color: #ebebeb;
 }
 .delete_icon {
-  width: 12px;
+  width: 20px;
+  opacity: 50%;
+  transition: all 0.3s ease-in-out;
 }
 .task_card_bottom_line {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.task_delete:hover .delete_icon {
+  opacity: 80%;
 }
